@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+</head>
+<body>
+    <script>
+        function add(a,b){
+            return a+b;
+        }
+
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+        let sum = add(10,20);
+        let userName = "Anjali Singla";
+        let greetingMessage = greet(userName);
+        console.log(greetingMessage);
+        window.alert(greetingMessage);
+        document.write(greetingMessage+"</br>");
+        document.write("The sum of 10 and 20 is: " + sum + "<br>");
+        console.log("The sum of 10 and 20 is: " + sum);
+
+        //invoking the functions
+        //1. inside javascript
+        let result = add(5, 7);
+        console.log("The sum of 5 and 7 is: " + result);
+
+        //using user events
+        function showAlert(){
+            window.alert("Button Clicked!");
+        }
+        //using automatic invocation
+        (function(){
+            console.log("This function is automatically invoked!");
+        })();
+    </script>
+    <button onclick="showAlert()">Click Me</button>
+</body>
+</html>

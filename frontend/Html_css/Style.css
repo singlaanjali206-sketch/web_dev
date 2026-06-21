@@ -139,3 +139,7 @@
             cursor: pointer;
             font-family: 'Arial', sans-serif;
         }
+        button:hover {
+            background-color: rgb(95, 31, 156);
+        transition: transform 0.3s ease;
+        }

@@ -1,0 +1,53 @@
+body {
+  background: #898989;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.calc {
+  width: 260px;
+  margin: 50px auto;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 20px;
+  background: #643c3c76;
+}
+
+.screen {
+  background: #1a1111;
+  color: #fff;
+  padding: 12px;
+  text-align: right;
+  font-size: 28px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+button {
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;           
+  color: #000;               
+  font-family: Arial, sans-serif; 
+}
+
+button:hover {
+  background: #ddd;          
+}
+
+.span2 {
+  grid-column: span 2;
+}

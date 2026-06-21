@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="stylecal.css">
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="calc">
+    <div class="screen" id="screen">0</div>
+
+    <div class="grid">
+      <button class="span2" onclick="press('AC')">AC</button>
+      <button onclick="press('DEL')">⌫</button>
+      <button onclick="press('/')">÷</button>
+
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('*')">×</button>
+
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('-')">−</button>
+
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('+')">+</button>
+
+      <button class="span2" onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="press('=')">=</button>
+    </div>
+  </div>
+
+  <!-- Script moved to bottom -->
+  <script>
+    var display = document.getElementById('screen'); // renamed to display
+
+    function press(value) {
+      switch (value) {
+        case 'AC':
+          display.textContent = '0';
+          break;
+
+        case 'DEL':
+          display.textContent = display.textContent.slice(0, -1) || '0';
+          break;
+
+        case '=':
+          display.textContent = eval(display.textContent);
+          break;
+
+        default:
+          display.textContent += value;
+      }
+    }
+  </script>
+</body>
+</html>
