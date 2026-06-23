@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+   <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+   <h1 id="demo"></h1>
+   <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+    style="background-color:#3843d9;width:40px;height:30px;padding:20px;">
+    Click Me</div>
+
+<script>
+    function mDown(obj) {
+        obj.style.backgroundColor= "red";
+        obj.innerHTML = "Release Me";
+    }
+
+    function mUp(obj) {
+        obj.style.backgroundColor="#D94A38";
+        obj.innerHTML="Thank You";
+    }
+</script>
+
+</body>
+</html>

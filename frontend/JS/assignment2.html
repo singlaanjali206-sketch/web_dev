@@ -10,7 +10,6 @@
   <h1>Calculator</h1>
   <div class="calc">
     <div class="screen" id="screen">0</div>
-
     <div class="grid">
       <button class="span2" onclick="press('AC')">AC</button>
       <button onclick="press('DEL')">⌫</button>
@@ -19,12 +18,12 @@
       <button onclick="press('7')">7</button>
       <button onclick="press('8')">8</button>
       <button onclick="press('9')">9</button>
-      <button onclick="press('*')">×</button>
+      <button onclick="press('*')">x</button>
 
       <button onclick="press('4')">4</button>
       <button onclick="press('5')">5</button>
       <button onclick="press('6')">6</button>
-      <button onclick="press('-')">−</button>
+      <button onclick="press('-')">-</button>
 
       <button onclick="press('1')">1</button>
       <button onclick="press('2')">2</button>
@@ -36,10 +35,8 @@
       <button onclick="press('=')">=</button>
     </div>
   </div>
-
-  <!-- Script moved to bottom -->
   <script>
-    var display = document.getElementById('screen'); // renamed to display
+    var display = document.getElementById('screen'); 
 
     function press(value) {
       switch (value) {
@@ -56,7 +53,12 @@
           break;
 
         default:
-          display.textContent += value;
+            if (display.textContent === '0') {
+              display.textContent = value;  
+            } 
+            else {
+              display.textContent += value; 
+            }
       }
     }
   </script>

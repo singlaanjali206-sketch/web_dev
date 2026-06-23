@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        const car={
+            name:"Thar",
+            price:2000,
+            color:"red",
+            start:function(){document.write("Car started<br>");},
+            stop:function(){document.write("Car stopped");}
+        };
+
+    car.start();
+    car.stop();
+    console.log(car.name);
+    console.log(car.price);
+
+    const person={
+        name:"Anjali Singla",
+        age:20,
+        vote:function(){
+        if(this.age>=18){
+                document.write("<br>"+this.name+" can vote!");
+            }
+        else{
+            document.write("<br>"+this.name+" can not vote!");
+             }
+        }
+    };
+    person.vote();
+    document.write("<br>your age:"+person.age);
+    </script>
+    
+</body>
+</html>

@@ -6,12 +6,13 @@ h1 {
   color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #000;
 }
 
 .calc {
-  width: 260px;
+  width: 400px;
   margin: 50px auto;
-  border: 1px solid #000000;
+  border: 3px solid #000000;
   border-radius: 12px;
   padding: 20px;
   background: #643c3c76;
@@ -36,7 +37,7 @@ h1 {
 button {
   padding: 16px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 2px solid #000000;
   border-radius: 8px;
   cursor: pointer;
   background: #fff;           
